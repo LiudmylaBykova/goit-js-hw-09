@@ -9,7 +9,7 @@ const refs = {
 const localStorageKey = 'feedback-form-state';
 const localFormData = JSON.parse(localStorage.getItem(localStorageKey));
 
-if (localFormData != null) {
+if (localFormData !== null) {
   refs.input.value = localFormData.email;
   refs.textarea.value = localFormData.message;
 }
