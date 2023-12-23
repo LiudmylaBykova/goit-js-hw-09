@@ -73,15 +73,15 @@ const refs = {
   gallery: document.querySelector('.gallery'),
 };
 
-refs.gallery.innerHTML = createMarcup(images);
+refs.gallery.innerHTML = createMarkup(images);
 
-let gallery = new SimpleLightbox('.gallery-item a', {
+const gallery = new SimpleLightbox('.gallery-item a', {
   captionsData: 'alt',
   captionDelay: 250,
   htmlClass: 'simple-lightbox',
 });
 
-function createMarcup(arr) {
+function createMarkup(arr) {
   return arr
     .map(
       ({ preview, original, description }) =>

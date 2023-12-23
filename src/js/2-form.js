@@ -9,17 +9,15 @@ const refs = {
 const localStorageKey = 'feedback-form-state';
 const localFormData = JSON.parse(localStorage.getItem(localStorageKey));
 
-if (localFormData !== null) {
+if (localFormData !== null && localFormData !== undefined) {
   refs.input.value = localFormData.email;
   refs.textarea.value = localFormData.message;
 }
 
 refs.form.addEventListener('input', event => {
-  event.preventDefault();
-
   const formData = {
-    email: refs.input.value,
-    message: refs.textarea.value,
+    email: refs.input.value.trim(),
+    message: refs.textarea.value.trim(),
   };
 
   localStorage.setItem(localStorageKey, JSON.stringify(formData));
