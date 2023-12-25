@@ -25,7 +25,6 @@
 }
 
 /* gallery */
-
 body {
   background-color: #fafafa;
 }
@@ -68,26 +67,7 @@ img {
   background-color: rgba(46, 47, 66, 0.80);
 }
 
-.simple-lightbox .sl-wrapper .sl-close {
-  color: white;
-}
-
-element.style {
-  opacity: 1;
-  display: block;
-}
-
-.simple-lightbox .sl-wrapper .sl-counter {
-  color: #FFF;
-}
-
-.simple-lightbox .sl-wrapper .sl-navigation button {
-  color: #FFF;
-}
-
 /* form */
-
-
 .feedback-form {
   width: 408px;
   height: 296px;
